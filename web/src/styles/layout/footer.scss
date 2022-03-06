@@ -1,0 +1,44 @@
+.footer {
+  border-top: solid 1px #d8d8d8;
+  background-color: #fff;
+  width: 100%;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @include desktop {
+      width: 900px;
+      margin: 0 auto;
+    }
+  }
+
+  &__text {
+    margin-top: 18px;
+    font-family: $principal-font;
+    font-size: 14px;
+    color: #6b6b6b;
+    margin: 18px 0 12px;
+    opacity: 0.5;
+
+    @include tablet {
+      margin: 8px 0 12px 40px;
+    }
+  }
+
+  &__logo {
+    width: 40px;
+    margin-bottom: 10px;
+
+    @include tablet {
+      margin: 10px 40px 10px 0;
+    }
+  }
+}
